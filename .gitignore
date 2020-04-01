@@ -34,3 +34,11 @@ out
 gen
 /target/
 !/.idea/
+.gitignore
+compiler.xml
+encodings.xml
+misc.xml
+uiDesigner.xml
+vcs.xml
+/.idea/encodings.xml
+/.idea/workspace.xml

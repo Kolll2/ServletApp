@@ -34,6 +34,16 @@ public class MainServlet extends HttpServlet {
                 "\nParams: \n" + params + "\n");
     }
 
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String uri = req.getRequestURI();
+        String params = formatParams(req);
+
+        resp.getWriter().write("Method doPost \n" +
+                "URI: " + uri +
+                "\nParams: \n" + params + "\n");
+    }
+
     private String formatParams(HttpServletRequest req) {
         return req.getParameterMap()
                 .entrySet()
